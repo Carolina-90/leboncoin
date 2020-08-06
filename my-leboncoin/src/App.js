@@ -6,6 +6,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Offers from "./containers/Offerss";
 import Offer from "./containers/Offer";
 import LogIn from "./containers/LogIn";
+import Publish from "./containers/Publish";
+import Payment from "./containers/Payment";
 import Header from "./components/Header";
 
 import Cookies from "js-cookie";
@@ -24,6 +26,12 @@ function App() {
             <Offer />
           </Route>
           <Route path="/login">
+            <LogIn setUser={setUser} />
+          </Route>
+          <Route path="/publish">
+            <LogIn setUser={setUser} />
+          </Route>
+          <Route path="/payment">
             <LogIn setUser={setUser} />
           </Route>
 

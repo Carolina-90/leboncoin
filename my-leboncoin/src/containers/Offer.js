@@ -28,6 +28,17 @@ const Offer = () => {
     <div>
       <p>{data.title}</p>
       <p>{data.description}</p>
+      <button
+        onClick={() => {
+          hystory.push("/payment", {
+            title: data.title,
+            price: data.price,
+            picture: data.picture,
+          });
+        }}
+      >
+        Acheter
+      </button>
     </div>
   );
 };

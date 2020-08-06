@@ -25,10 +25,11 @@ const Offers = () => {
         return (
           <Link key={offer._id} to={`/offer/${offer._id}`}>
             <div
-              style={{ border: "1px solid black", width: 400, marginLeft: 50 }}
+              style={{ border: "1px solid black", width: 600, marginLeft: 70 }}
             >
               <p>{offer.title}</p>
               <p>{offer.price}</p>
+              <p>{new Date(offer.created).toLocaleString()} </p>
             </div>
           </Link>
         );
